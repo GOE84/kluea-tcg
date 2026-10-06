@@ -1,5 +1,10 @@
 # เกลือ TCG — HTML / CSS / JavaScript แบบแก้ไขได้
 
+เว็บเดโมออนไลน์: https://goe84.github.io/kluea-tcg/
+ซอร์สโค้ดบน GitHub: https://github.com/GOE84/kluea-tcg
+
+GitHub Pages เผยแพร่ไฟล์ใน `docs/` ซึ่งสร้างด้วย `python3 tools/build-pages.py` หลังแก้ไฟล์เว็บหลัก ให้รันคำสั่งนี้ก่อน commit และ push เวอร์ชันออนไลน์ใช้แชทตอบจากข้อมูลเดโมในเบราว์เซอร์ ส่วน Gemini API ต้องใช้โฮสต์ที่รองรับฝั่งเซิร์ฟเวอร์และตั้ง secret แยกต่างหาก
+
 หน้าเว็บใช้ HTML/CSS/JavaScript ไม่มี framework หรือขั้นตอน build ส่วน Gemini ใช้ Node.js 22 ขึ้นไป หรือ Cloudflare Pages Functions
 
 ## โครงสร้าง
