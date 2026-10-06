@@ -1,0 +1,419 @@
+{
+  "source": "kluea-tcg-demo.xlsx",
+  "documents": [
+    {
+      "id": "excel-product-pokemon",
+      "type": "product",
+      "productId": "pokemon",
+      "title": "Pokémon Destined Rivals",
+      "content": "Pokémon Destined Rivals. ราคา 5900 บาท. สต็อกตัวอย่าง 6 ชิ้น. โปรโมชัน โปรเปิดเดโม ลด 5%. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "pokemon",
+        "Pokémon",
+        "Destined Rivals",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-promotion-pokemon",
+      "type": "promotion",
+      "productId": "pokemon",
+      "title": "โปรโมชัน Pokémon Destined Rivals",
+      "content": "โปรโมชัน Pokémon Destined Rivals: โปรเปิดเดโม ลด 5%, ประเภท เปอร์เซ็นต์, ค่า 5. ข้อมูลจากชีตโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "โปร ลด โปรโมชั่น",
+        "Pokémon",
+        "Destined Rivals"
+      ]
+    },
+    {
+      "id": "excel-product-onepiece",
+      "type": "product",
+      "productId": "onepiece",
+      "title": "ONE PIECE Romance Dawn [OP01]",
+      "content": "ONE PIECE Romance Dawn [OP01]. ราคา 190 บาท. สต็อกตัวอย่าง 8 ชิ้น. โปรโมชัน ซื้อ 3 ซอง ลด 10%. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "onepiece",
+        "ONE PIECE",
+        "Romance Dawn [OP01]",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-promotion-onepiece",
+      "type": "promotion",
+      "productId": "onepiece",
+      "title": "โปรโมชัน ONE PIECE Romance Dawn [OP01]",
+      "content": "โปรโมชัน ONE PIECE Romance Dawn [OP01]: ซื้อ 3 ซอง ลด 10%, ประเภท เปอร์เซ็นต์, ค่า 10. ข้อมูลจากชีตโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "โปร ลด โปรโมชั่น",
+        "ONE PIECE",
+        "Romance Dawn [OP01]"
+      ]
+    },
+    {
+      "id": "excel-product-gundam",
+      "type": "product",
+      "productId": "gundam",
+      "title": "GUNDAM Heroic Beginnings [ST01]",
+      "content": "GUNDAM Heroic Beginnings [ST01]. ราคา 690 บาท. สต็อกตัวอย่าง 12 ชิ้น. โปรโมชัน รับเดโมฟรีค่าห่อ. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "gundam",
+        "GUNDAM",
+        "Heroic Beginnings [ST01]",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-promotion-gundam",
+      "type": "promotion",
+      "productId": "gundam",
+      "title": "โปรโมชัน GUNDAM Heroic Beginnings [ST01]",
+      "content": "โปรโมชัน GUNDAM Heroic Beginnings [ST01]: รับเดโมฟรีค่าห่อ, ประเภท สิทธิพิเศษ, ค่า 0. ข้อมูลจากชีตโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "โปร ลด โปรโมชั่น",
+        "GUNDAM",
+        "Heroic Beginnings [ST01]"
+      ]
+    },
+    {
+      "id": "excel-product-lorcana",
+      "type": "product",
+      "productId": "lorcana",
+      "title": "LORCANA The First Chapter — Starter Set",
+      "content": "LORCANA The First Chapter — Starter Set. ราคา 2290 บาท. สต็อกตัวอย่าง 4 ชิ้น. โปรโมชัน โปรเซ็ต ลด ฿200. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "lorcana",
+        "LORCANA",
+        "The First Chapter — Starter Set",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-promotion-lorcana",
+      "type": "promotion",
+      "productId": "lorcana",
+      "title": "โปรโมชัน LORCANA The First Chapter — Starter Set",
+      "content": "โปรโมชัน LORCANA The First Chapter — Starter Set: โปรเซ็ต ลด ฿200, ประเภท ส่วนลดคงที่, ค่า 200. ข้อมูลจากชีตโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "โปร ลด โปรโมชั่น",
+        "LORCANA",
+        "The First Chapter — Starter Set"
+      ]
+    },
+    {
+      "id": "excel-product-pokemon-pack-demo",
+      "type": "product",
+      "productId": "pokemon-pack-demo",
+      "title": "Pokémon Booster Pack Demo A",
+      "content": "Pokémon Booster Pack Demo A. ราคา 179 บาท. สต็อกตัวอย่าง 24 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "pokemon-pack-demo",
+        "Pokémon",
+        "Booster Pack Demo A",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-pokemon-deck-demo",
+      "type": "product",
+      "productId": "pokemon-deck-demo",
+      "title": "Pokémon Starter Deck Demo B",
+      "content": "Pokémon Starter Deck Demo B. ราคา 590 บาท. สต็อกตัวอย่าง 11 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "pokemon-deck-demo",
+        "Pokémon",
+        "Starter Deck Demo B",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-onepiece-box-demo",
+      "type": "product",
+      "productId": "onepiece-box-demo",
+      "title": "ONE PIECE Booster Box Demo A",
+      "content": "ONE PIECE Booster Box Demo A. ราคา 3990 บาท. สต็อกตัวอย่าง 5 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "onepiece-box-demo",
+        "ONE PIECE",
+        "Booster Box Demo A",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-onepiece-deck-demo",
+      "type": "product",
+      "productId": "onepiece-deck-demo",
+      "title": "ONE PIECE Starter Deck Demo B",
+      "content": "ONE PIECE Starter Deck Demo B. ราคา 490 บาท. สต็อกตัวอย่าง 14 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "onepiece-deck-demo",
+        "ONE PIECE",
+        "Starter Deck Demo B",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-gundam-pack-demo",
+      "type": "product",
+      "productId": "gundam-pack-demo",
+      "title": "GUNDAM Booster Pack Demo A",
+      "content": "GUNDAM Booster Pack Demo A. ราคา 159 บาท. สต็อกตัวอย่าง 30 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "gundam-pack-demo",
+        "GUNDAM",
+        "Booster Pack Demo A",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-gundam-deck-demo",
+      "type": "product",
+      "productId": "gundam-deck-demo",
+      "title": "GUNDAM Starter Deck Demo B",
+      "content": "GUNDAM Starter Deck Demo B. ราคา 720 บาท. สต็อกตัวอย่าง 9 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "gundam-deck-demo",
+        "GUNDAM",
+        "Starter Deck Demo B",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-lorcana-pack-demo",
+      "type": "product",
+      "productId": "lorcana-pack-demo",
+      "title": "LORCANA Booster Pack Demo A",
+      "content": "LORCANA Booster Pack Demo A. ราคา 220 บาท. สต็อกตัวอย่าง 18 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "lorcana-pack-demo",
+        "LORCANA",
+        "Booster Pack Demo A",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-lorcana-deck-demo",
+      "type": "product",
+      "productId": "lorcana-deck-demo",
+      "title": "LORCANA Starter Deck Demo B",
+      "content": "LORCANA Starter Deck Demo B. ราคา 790 บาท. สต็อกตัวอย่าง 7 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "lorcana-deck-demo",
+        "LORCANA",
+        "Starter Deck Demo B",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-yugioh-pack-demo",
+      "type": "product",
+      "productId": "yugioh-pack-demo",
+      "title": "Yu-Gi-Oh! Booster Pack Demo A",
+      "content": "Yu-Gi-Oh! Booster Pack Demo A. ราคา 129 บาท. สต็อกตัวอย่าง 26 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "yugioh-pack-demo",
+        "Yu-Gi-Oh!",
+        "Booster Pack Demo A",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-product-yugioh-deck-demo",
+      "type": "product",
+      "productId": "yugioh-deck-demo",
+      "title": "Yu-Gi-Oh! Starter Deck Demo B",
+      "content": "Yu-Gi-Oh! Starter Deck Demo B. ราคา 450 บาท. สต็อกตัวอย่าง 13 ชิ้น. โปรโมชัน ไม่มีโปรโมชัน · ข้อมูลจำลอง. ข้อมูลจากชีตสินค้าและโปรโมชั่นใน Excel ตัวอย่าง.",
+      "tags": [
+        "yugioh-deck-demo",
+        "Yu-Gi-Oh!",
+        "Starter Deck Demo B",
+        "สินค้า ราคา โปร การ์ด"
+      ]
+    },
+    {
+      "id": "excel-sales-summary",
+      "type": "sales-summary",
+      "productId": "onepiece",
+      "metadata": {
+        "productId": "onepiece",
+        "productName": "Romance Dawn [OP01]",
+        "game": "ONE PIECE",
+        "units": 36
+      },
+      "title": "สรุปสินค้าขายดีจาก Excel",
+      "content": "สินค้าขายดีที่สุดคือ ONE PIECE Romance Dawn [OP01] ขายได้ 36 ชิ้น. Romance Dawn [OP01] 36 ชิ้น. Heroic Beginnings [ST01] 12 ชิ้น. Destined Rivals 5 ชิ้น. The First Chapter — Starter Set 3 ชิ้น. Booster Pack Demo A 0 ชิ้น. Starter Deck Demo B 0 ชิ้น. Booster Box Demo A 0 ชิ้น. Starter Deck Demo B 0 ชิ้น. Booster Pack Demo A 0 ชิ้น. Starter Deck Demo B 0 ชิ้น. Booster Pack Demo A 0 ชิ้น. Starter Deck Demo B 0 ชิ้น. Booster Pack Demo A 0 ชิ้น. Starter Deck Demo B 0 ชิ้น. เป็นยอดขายจำลองจากชีตยอดขายใน Excel.",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ อันดับ dashboard สินค้าขายดีที่สุด"
+      ]
+    },
+    {
+      "id": "excel-sales-pokemon",
+      "type": "sales",
+      "productId": "pokemon",
+      "title": "ยอดขายตัวอย่าง Pokémon Destined Rivals",
+      "content": "Destined Rivals Pokémon ขายได้ 5 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "Pokémon",
+        "Destined Rivals"
+      ]
+    },
+    {
+      "id": "excel-sales-onepiece",
+      "type": "sales",
+      "productId": "onepiece",
+      "title": "ยอดขายตัวอย่าง ONE PIECE Romance Dawn [OP01]",
+      "content": "Romance Dawn [OP01] ONE PIECE ขายได้ 36 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "ONE PIECE",
+        "Romance Dawn [OP01]"
+      ]
+    },
+    {
+      "id": "excel-sales-gundam",
+      "type": "sales",
+      "productId": "gundam",
+      "title": "ยอดขายตัวอย่าง GUNDAM Heroic Beginnings [ST01]",
+      "content": "Heroic Beginnings [ST01] GUNDAM ขายได้ 12 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "GUNDAM",
+        "Heroic Beginnings [ST01]"
+      ]
+    },
+    {
+      "id": "excel-sales-lorcana",
+      "type": "sales",
+      "productId": "lorcana",
+      "title": "ยอดขายตัวอย่าง LORCANA The First Chapter — Starter Set",
+      "content": "The First Chapter — Starter Set LORCANA ขายได้ 3 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "LORCANA",
+        "The First Chapter — Starter Set"
+      ]
+    },
+    {
+      "id": "excel-sales-pokemon-pack-demo",
+      "type": "sales",
+      "productId": "pokemon-pack-demo",
+      "title": "ยอดขายตัวอย่าง Pokémon Booster Pack Demo A",
+      "content": "Booster Pack Demo A Pokémon ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "Pokémon",
+        "Booster Pack Demo A"
+      ]
+    },
+    {
+      "id": "excel-sales-pokemon-deck-demo",
+      "type": "sales",
+      "productId": "pokemon-deck-demo",
+      "title": "ยอดขายตัวอย่าง Pokémon Starter Deck Demo B",
+      "content": "Starter Deck Demo B Pokémon ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "Pokémon",
+        "Starter Deck Demo B"
+      ]
+    },
+    {
+      "id": "excel-sales-onepiece-box-demo",
+      "type": "sales",
+      "productId": "onepiece-box-demo",
+      "title": "ยอดขายตัวอย่าง ONE PIECE Booster Box Demo A",
+      "content": "Booster Box Demo A ONE PIECE ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "ONE PIECE",
+        "Booster Box Demo A"
+      ]
+    },
+    {
+      "id": "excel-sales-onepiece-deck-demo",
+      "type": "sales",
+      "productId": "onepiece-deck-demo",
+      "title": "ยอดขายตัวอย่าง ONE PIECE Starter Deck Demo B",
+      "content": "Starter Deck Demo B ONE PIECE ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "ONE PIECE",
+        "Starter Deck Demo B"
+      ]
+    },
+    {
+      "id": "excel-sales-gundam-pack-demo",
+      "type": "sales",
+      "productId": "gundam-pack-demo",
+      "title": "ยอดขายตัวอย่าง GUNDAM Booster Pack Demo A",
+      "content": "Booster Pack Demo A GUNDAM ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "GUNDAM",
+        "Booster Pack Demo A"
+      ]
+    },
+    {
+      "id": "excel-sales-gundam-deck-demo",
+      "type": "sales",
+      "productId": "gundam-deck-demo",
+      "title": "ยอดขายตัวอย่าง GUNDAM Starter Deck Demo B",
+      "content": "Starter Deck Demo B GUNDAM ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "GUNDAM",
+        "Starter Deck Demo B"
+      ]
+    },
+    {
+      "id": "excel-sales-lorcana-pack-demo",
+      "type": "sales",
+      "productId": "lorcana-pack-demo",
+      "title": "ยอดขายตัวอย่าง LORCANA Booster Pack Demo A",
+      "content": "Booster Pack Demo A LORCANA ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "LORCANA",
+        "Booster Pack Demo A"
+      ]
+    },
+    {
+      "id": "excel-sales-lorcana-deck-demo",
+      "type": "sales",
+      "productId": "lorcana-deck-demo",
+      "title": "ยอดขายตัวอย่าง LORCANA Starter Deck Demo B",
+      "content": "Starter Deck Demo B LORCANA ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "LORCANA",
+        "Starter Deck Demo B"
+      ]
+    },
+    {
+      "id": "excel-sales-yugioh-pack-demo",
+      "type": "sales",
+      "productId": "yugioh-pack-demo",
+      "title": "ยอดขายตัวอย่าง Yu-Gi-Oh! Booster Pack Demo A",
+      "content": "Booster Pack Demo A Yu-Gi-Oh! ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "Yu-Gi-Oh!",
+        "Booster Pack Demo A"
+      ]
+    },
+    {
+      "id": "excel-sales-yugioh-deck-demo",
+      "type": "sales",
+      "productId": "yugioh-deck-demo",
+      "title": "ยอดขายตัวอย่าง Yu-Gi-Oh! Starter Deck Demo B",
+      "content": "Starter Deck Demo B Yu-Gi-Oh! ขายได้ 0 ชิ้น จากรายการขายจำลองใน Excel",
+      "tags": [
+        "ยอดขาย ขายดี สถิติ รายงาน",
+        "Yu-Gi-Oh!",
+        "Starter Deck Demo B"
+      ]
+    }
+  ]
+}

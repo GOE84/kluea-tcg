@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>เกลือ TCG | เลือกการ์ด จองโต๊ะ แล้วมาเจอกัน</title>
+    <meta
+      content="เดโมร้านเกลือ TCG เลือกซื้อการ์ดและอุปกรณ์ เช็กโต๊ะว่างและทดลองจองรอบเล่น"
+      name="description"
+    />
+    <meta content="#153fdf" name="theme-color" />
+    <link href="favicon.svg" rel="icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 01. แถบแจ้งสถานะเดโม -->
+    <div class="demo-bar">
+      เว็บนี้ถูกทำขึ้นเพื่อเสนอเท่านั้น ไม่ใช่เว็บจริง
+      <span>
+        <!--ลองเลือกสินค้าและจองโต๊ะ · ข้อมูลตัวอย่าง ยังไม่รับชำระเงิน-->
+      </span>
+    </div>
+    <!-- 02. โลโก้ร้านและเมนู -->
+    <header>
+      <a aria-label="เกลือ TCG หน้าแรก" class="brand" href="#">
+        <img alt="มาสคอตเกลือ TCG" src="assets/logo.jpg" />
+        <span>
+          เกลือ
+          <small> TCG / SHOP &amp; PLAY </small>
+        </span>
+      </a>
+      <nav aria-label="เมนูหลัก">
+        <button class="nav-link active" data-page="shop">ร้านค้า</button>
+        <button class="nav-link" data-page="booking">จองโต๊ะเล่น</button>
+        <button class="nav-link" data-page="events">ตารางกิจกรรม</button>
+        <button class="nav-link" data-page="chat">แชทช่วยเลือก</button>
+        <button class="nav-link" data-page="dashboard">Dashboard</button>
+      </nav>
+      <button class="cart-trigger" id="cart-open">
+        <svg
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          viewbox="0 0 24 24"
+        >
+          <path d="M6 7h15l-2 9H8L5 3H2M9 21h.01M18 21h.01"></path>
+        </svg>
+        <span class="cart-label"> ตะกร้า </span>
+        <span id="cart-count"> 0 </span>
+      </button>
+    </header>
+    <main>
+      <!-- 03. หน้าร้าน: ข้อความหลัก โลโก้เกม และสินค้า -->
+      <section class="page" id="shop">
+        <div class="hero-grid">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow">YOUR NEXT GOOD GAME STARTS HERE</div>
+              <h1>
+                การ์ดที่ชอบ
+                <br />
+                โต๊ะที่ใช่
+                <span> เจอกันที่เกลือ TCG </span>
+              </h1>
+              <p>
+                เปิดซองใหม่ จัดเด็คโปรด
+                <br />
+                แล้วชวนเพื่อนมาจอยกัน
+              </p>
+              <a class="button white" href="#catalog">
+                เลือกซื้อการ์ด
+                <span> ↗ </span>
+              </a>
+            </div>
+            <img
+              alt="เกลือ TCG มาสคอตร้าน"
+              class="hero-mascot"
+              src="assets/logo.jpg"
+            />
+            <span class="hero-stamp">
+              GOOD CARDS.
+              <br />
+              GREAT COMPANY.
+            </span>
+          </div>
+          <aside class="play-card">
+            <div class="eyebrow">LET’S PLAY</div>
+            <div class="play-top">
+              <h2>
+                มีเด็คแล้ว
+                <br />
+                มีโต๊ะหรือยัง?
+              </h2>
+              <span class="round-icon"> ↗ </span>
+            </div>
+            <p>
+              เช็กที่ว่างก่อนออกจากบ้าน
+              <br />
+              เลือกเวลา แล้วจับจองโต๊ะของคุณ
+            </p>
+            <!-- ตัวเลขสถานะตัวอย่างจะอัปเดตจาก data.js และรอบจองที่เลือก -->
+            <div class="availability">
+              <span> รอบตัวอย่าง 18:00 – 20:00 </span>
+              <strong>
+                4
+                <small> / 8 โต๊ะว่าง </small>
+              </strong>
+              <div class="capacity-bars">
+                <i> </i>
+                <i> </i>
+                <i> </i>
+                <i> </i>
+                <i class="empty"> </i>
+                <i class="empty"> </i>
+                <i class="empty"> </i>
+                <i class="empty"> </i>
+              </div>
+            </div>
+            <button class="button primary" data-page="booking">
+              เช็กโต๊ะ &amp; จองรอบเล่น
+            </button>
+            <small class="muted"> สถานะจำลองสำหรับทดลองจอง </small>
+          </aside>
+        </div>
+        <!-- โลโก้เกม: เปลี่ยนไฟล์ภาพใน assets/ หรือแก้ src ที่นี่ -->
+        <div aria-label="เกมการ์ด" class="brand-strip">
+          <span> FIND YOUR GAME </span>
+          <div class="game-brand">
+            <img
+              alt="Pokémon Trading Card Game"
+              height="64"
+              src="assets/game-pokemon.png"
+              width="144"
+            />
+          </div>
+          <div class="game-brand">
+            <img
+              alt="ONE PIECE Card Game"
+              height="64"
+              src="assets/game-onepiece.png"
+              width="144"
+            />
+          </div>
+          <div class="game-brand">
+            <img
+              alt="Gundam Card Game"
+              height="64"
+              src="assets/game-gundam.png"
+              width="144"
+            />
+          </div>
+          <div class="game-brand">
+            <img
+              alt="Disney Lorcana"
+              height="64"
+              src="assets/game-lorcana.webp"
+              width="144"
+            />
+          </div>
+          <div class="game-brand">
+            <img
+              alt="Yu-Gi-Oh! Trading Card Game"
+              height="64"
+              src="assets/game-yugioh.png"
+              width="144"
+            />
+          </div>
+        </div>
+        <!-- หมวดสินค้า: ข้อมูลรายการและราคาอยู่ใน data.js -->
+        <section class="catalog" id="catalog">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow blue">FRESH PICKS, GOOD LUCK</div>
+              <h2>
+                เติมเด็ค เติมความสนุก
+                <span class="tiny-label"> สินค้าตัวอย่าง </span>
+              </h2>
+            </div>
+            <label class="search">
+              <span> ⌕ </span>
+              <input
+                aria-label="ค้นหาสินค้า"
+                id="search"
+                placeholder="ค้นหาการ์ดหรือชื่อเกม"
+                type="search"
+              />
+            </label>
+          </div>
+          <div class="filter-row">
+            <div class="filters" id="filters">
+              <!-- ตัวกรองสร้างจากชื่อเกมใน data.js โดย script.js -->
+            </div>
+            <span class="muted" id="product-total"> 4 รายการ </span>
+          </div>
+          <div class="products" id="products">
+            <!-- การ์ดสินค้าสร้างจาก product-template ด้านล่าง ข้อมูลแก้ที่ data.js -->
+          </div>
+        </section>
+      </section>
+      <!-- 04. หน้าจองโต๊ะ: ข้อความและผังหน้าแก้ตรงนี้ กติกาอยู่ใน data.js -->
+      <section class="page" hidden="" id="booking">
+        <div class="page-title">
+          <div class="eyebrow blue">RESERVE YOUR NEXT GAME</div>
+          <h1>โต๊ะพร้อม เด็คพร้อม ลุยเลย</h1>
+          <p>เลือกวันและรอบเล่น แล้วเลือกโต๊ะที่ว่างสำหรับแก๊งของคุณ</p>
+        </div>
+        <div class="booking-layout">
+          <div>
+            <div class="panel">
+              <div class="booking-controls">
+                <label class="field">
+                  วันที่เล่น
+                  <input id="booking-date" required="" type="date" />
+                </label>
+                <label class="field">
+                  รอบเวลา
+                  <select id="booking-slot"></select>
+                </label>
+                <label class="field">
+                  จำนวนผู้เล่น
+                  <select id="booking-people"></select>
+                </label>
+              </div>
+              <div class="map-head">
+                <h2 aria-live="polite" id="availability-title"></h2>
+                <div class="legend">
+                  <span>
+                    <i> </i>
+                    ว่าง
+                  </span>
+                  <span>
+                    <i class="busy"> </i>
+                    ไม่ว่าง
+                  </span>
+                </div>
+              </div>
+              <p class="notice" hidden="" id="no-tables">
+                กรุณาเลือกวันหรือรอบเวลาอื่นเพื่อจองโต๊ะ
+              </p>
+              <div class="table-map">
+                <div class="room-label">PLAY AREA · โซนเล่นการ์ด</div>
+                <div class="table-grid" id="table-grid"></div>
+                <div class="entrance">ทางเข้า / เคาน์เตอร์</div>
+              </div>
+              <p class="muted small" id="booking-rules"></p>
+              <p class="muted small">
+                รอบเล่นและจำนวนโต๊ะเป็นข้อมูลตัวอย่าง
+                กรุณาตรวจสอบเวลาจริงกับร้าน
+              </p>
+            </div>
+            <section class="panel booking-list">
+              <h2>
+                การจองของฉัน
+                <span class="tiny-label"> เฉพาะเครื่องนี้ </span>
+              </h2>
+              <div id="reservation-list"></div>
+              <p class="muted" id="no-reservations">
+                ยังไม่มีการจอง ลองเลือกโต๊ะสำหรับเกมถัดไปของคุณ
+              </p>
+            </section>
+          </div>
+          <aside class="panel summary-card">
+            <div class="eyebrow blue">YOUR GAME PLAN</div>
+            <h2>สรุปการจอง</h2>
+            <div class="summary-row">
+              <span> วันที่ </span>
+              <strong id="summary-date"> </strong>
+            </div>
+            <div class="summary-row">
+              <span> เวลา </span>
+              <strong id="summary-slot"> </strong>
+            </div>
+            <div class="summary-row">
+              <span> ผู้เล่น </span>
+              <strong id="summary-people"> </strong>
+            </div>
+            <div class="summary-row">
+              <span> โต๊ะ </span>
+              <strong id="summary-table"> </strong>
+            </div>
+            <button class="button primary full-width" disabled="" id="reserve">
+              เลือกโต๊ะบนผังก่อน
+            </button>
+            <p>
+              นี่คือการจองจำลอง บันทึกเฉพาะเบราว์เซอร์นี้
+              ไม่ใช่สถานะโต๊ะจริงของร้าน และไม่ซิงก์ระหว่างอุปกรณ์
+            </p>
+          </aside>
+        </div>
+      </section>
+      <!-- 05. หน้ากิจกรรม: ตารางรายการอยู่ใน data.js -->
+      <section class="page" hidden="" id="events">
+        <div class="page-title">
+          <div class="eyebrow blue">MEET. PLAY. REPEAT.</div>
+          <h1>สัปดาห์นี้ เล่นอะไรดี?</h1>
+          <p id="events-caption"></p>
+        </div>
+        <div class="event-layout">
+          <img
+            alt="ตารางกิจกรรมร้านเกลือ TCG"
+            id="events-poster"
+            src="assets/events.jpg"
+          />
+          <div class="panel">
+            <h2>Weekly game nights</h2>
+            <div id="event-rows"></div>
+            <p class="notice">
+              ร้านปิดวันจันทร์
+              <br />
+              กรุณายืนยันตารางล่าสุดและการสมัครแข่งขันกับร้าน
+              การจองโต๊ะเดโมไม่ใช่การสมัครกิจกรรม
+            </p>
+            <a
+              class="button primary full-width"
+              href="https://www.facebook.com/kluea.tcg"
+              rel="noopener"
+              target="_blank"
+            >
+              ดูเพจเกลือ TCG ↗
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- แชทตัวอย่าง: ตอบจาก data.js และแสดงการ์ดสินค้าหรือสถานะโต๊ะ -->
+      <section class="page assistant-page" hidden id="chat">
+        <div class="page-intro">
+          <div class="eyebrow blue">KLUEA CHAT · DEMO</div>
+          <h1>คุยเรื่องการ์ดกับเรา</h1>
+          <p>
+            ถามหาราคา โปรโมชัน หรือโต๊ะว่างได้เลย ข้อมูลตัวอย่างจากแคตตาล็อกร้าน
+          </p>
+        </div>
+        <div class="chat-shell">
+          <div class="chat-topline">
+            <span class="chat-avatar">K</span>
+            <div>
+              <strong>ผู้ช่วยเกลือ</strong
+              ><small>พร้อมช่วยเลือกการ์ดและเช็กโต๊ะ</small>
+            </div>
+            <span class="demo-pill">DEMO</span>
+          </div>
+          <div
+            aria-live="polite"
+            class="chat-messages"
+            id="chat-messages"
+            role="log"
+          ></div>
+          <div class="chat-suggestions" id="chat-suggestions">
+            <button type="button">มี Pokémon อะไรแนะนำบ้าง</button>
+            <button type="button">โปรวันนี้มีอะไรบ้าง</button>
+            <button type="button">วันนี้มีโต๊ะว่างไหม</button>
+          </div>
+          <form class="chat-composer" id="chat-form">
+            <label class="sr-only" for="chat-input">พิมพ์ข้อความ</label
+            ><input
+              autocomplete="off"
+              id="chat-input"
+              maxlength="240"
+              placeholder="พิมพ์ถามได้เลย เช่น มีโต๊ะว่างไหม"
+              required
+            /><button
+              aria-label="ส่งข้อความ"
+              class="button primary"
+              type="submit"
+            >
+              ส่ง ↗
+            </button>
+          </form>
+          <p class="chat-disclaimer">
+            ข้อมูลสินค้าและโต๊ะเป็นตัวอย่าง · Gemini ใช้ได้เมื่อเปิด API
+            บนเซิร์ฟเวอร์
+          </p>
+        </div>
+      </section>
+      <!-- Dashboard ยอดขาย: ใช้ข้อมูลจำลองชุดเดียวกับ data.js -->
+      <section class="page dashboard-page" hidden id="dashboard">
+        <div class="page-intro dashboard-heading">
+          <div>
+            <div class="eyebrow blue">SHOP OVERVIEW</div>
+            <h1>Dashboard ยอดขาย</h1>
+            <p>สรุปจากรายการขายจำลองชุดเดียวกับไฟล์ Excel</p>
+          </div>
+          <span class="demo-pill">ข้อมูลตัวอย่าง</span>
+        </div>
+        <div class="dashboard-kpis" id="dashboard-kpis"></div>
+        <div class="dashboard-grid">
+          <section class="dashboard-panel">
+            <div class="panel-heading">
+              <div>
+                <div class="eyebrow blue">TOP PICKS</div>
+                <h2>สินค้าขายดี</h2>
+              </div>
+              <span class="muted">เรียงตามจำนวนชิ้น</span>
+            </div>
+            <div class="best-sellers" id="best-sellers"></div>
+          </section>
+          <section class="dashboard-panel">
+            <div class="panel-heading">
+              <div>
+                <div class="eyebrow blue">SALES MIX</div>
+                <h2>ยอดตามสินค้า</h2>
+              </div>
+              <span class="muted">บาท · จำลอง</span>
+            </div>
+            <div class="sales-breakdown" id="sales-breakdown"></div>
+          </section>
+        </div>
+        <div class="dashboard-note">
+          ยอดทั้งหมดเป็นข้อมูลจำลองสำหรับทดสอบเท่านั้น
+          ไม่ใช่ยอดขายจริงหรือข้อมูลจากลูกค้า
+        </div>
+      </section>
+    </main>
+    <!-- 06. ข้อมูลติดต่อและท้ายเว็บ -->
+    <footer>
+      <a class="footer-brand" href="#">
+        เกลือ
+        <span> TCG </span>
+      </a>
+      <p>การ์ดที่ชอบ คอมมูนิตี้ที่ใช่</p>
+      <a
+        href="https://www.facebook.com/kluea.tcg"
+        rel="noopener"
+        target="_blank"
+      >
+        Facebook · เกลือ TCG ↗
+      </a>
+      <span class="muted"> เดโม · ราคาและสถานะโต๊ะเป็นข้อมูลตัวอย่าง </span>
+    </footer>
+    <dialog id="cart-dialog">
+      <div class="dialog-head">
+        <h2>ตะกร้าของคุณ</h2>
+        <button
+          aria-label="ปิดตะกร้า"
+          class="icon-button"
+          data-close="cart-dialog"
+        >
+          ×
+        </button>
+      </div>
+      <div id="cart-content"></div>
+    </dialog>
+    <dialog id="booking-dialog"></dialog>
+    <dialog id="product-dialog"></dialog>
+    <div aria-live="polite" id="toast" role="status"></div>
+    <!-- รูปแบบรายการซ้ำและหน้าต่างป๊อปอัป แก้ข้อความ/โครงสร้างได้ที่ template ด้านล่าง -->
+    <!-- สินค้า 1 รายการ: เพิ่ม/ลบสินค้าใน data.js โดยไม่ต้องคัดลอก HTML -->
+    <template id="product-template">
+      <article class="product">
+        <button class="product-image" data-action="detail">
+          <span class="badge" data-field="badge"> </span>
+          <img alt="" data-field="image" loading="lazy" />
+        </button>
+        <div class="product-meta" data-field="game"></div>
+        <h3 data-field="name"></h3>
+        <p class="product-desc" data-field="desc"></p>
+        <div class="price-row">
+          <span class="price" data-field="price"> </span>
+          <button class="add-button" data-action="add">+</button>
+        </div>
+        <p class="stock" data-field="stock"></p>
+      </article>
+    </template>
+    <template id="no-products-template">
+      <div class="empty-state">
+        ไม่พบสินค้าที่ค้นหา
+        <br />
+        <button class="text-button" data-action="clear-search">
+          ล้างการค้นหาและตัวกรอง
+        </button>
+      </div>
+    </template>
+    <!-- รายละเอียดสินค้า -->
+    <template id="product-detail-template">
+      <div>
+        <div class="dialog-head">
+          <span class="eyebrow blue" data-field="game"> </span>
+          <button
+            aria-label="ปิดรายละเอียด"
+            class="icon-button"
+            data-close="product-dialog"
+          >
+            ×
+          </button>
+        </div>
+        <img alt="" class="product-detail-img" data-field="image" />
+        <h2 data-field="name"></h2>
+        <p data-field="details"></p>
+        <p class="notice">ราคาและสต็อกเป็นตัวอย่างสำหรับเดโม</p>
+        <p>
+          <a
+            class="text-button"
+            data-field="source"
+            rel="noopener"
+            target="_blank"
+          >
+            ดูข้อมูลต้นฉบับจากผู้ผลิต ↗
+          </a>
+        </p>
+        <div class="price-row">
+          <span class="price" data-field="price"> </span>
+          <button class="button primary" data-action="add">
+            เพิ่มลงตะกร้า
+          </button>
+        </div>
+      </div>
+    </template>
+    <!-- ตะกร้าสินค้า -->
+    <template id="cart-template">
+      <div>
+        <div data-field="items"></div>
+        <div class="cart-total">
+          <span> รวม </span>
+          <span data-field="total"> </span>
+        </div>
+        <p class="notice">
+          ทดลองสั่งซื้อเท่านั้น ไม่มีการเก็บเงินหรือส่งคำสั่งซื้อให้ร้าน
+        </p>
+        <button class="button primary full-width" id="checkout">
+          ทดลองสั่งซื้อ
+        </button>
+      </div>
+    </template>
+    <template id="cart-item-template">
+      <div class="cart-line">
+        <img alt="" data-field="image" />
+        <div>
+          <h3 data-field="name"></h3>
+          <div class="quantity">
+            <button data-action="decrease">−</button>
+            <span data-field="quantity"> </span>
+            <button data-action="increase">+</button>
+          </div>
+        </div>
+        <strong data-field="subtotal"> </strong>
+      </div>
+    </template>
+    <template id="empty-cart-template">
+      <div class="empty-state">
+        <h3>ตะกร้ายังว่างอยู่</h3>
+        <p>เลือกการ์ดที่ถูกใจแล้วเพิ่มลงตะกร้าได้เลย</p>
+        <button class="button primary" data-close="cart-dialog">
+          เลือกซื้อสินค้า
+        </button>
+      </div>
+    </template>
+    <template id="checkout-success-template">
+      <div class="center">
+        <div class="success-mark">✓</div>
+        <h2>ทดลองสั่งซื้อสำเร็จ</h2>
+        <p>
+          ยอดตัวอย่าง
+          <span data-field="total"> </span>
+        </p>
+        <p class="notice">
+          ไม่มีการตัดเงินหรือสร้างคำสั่งซื้อจริง
+          <br />
+          ติดต่อร้านผ่าน Facebook เมื่อต้องการซื้อสินค้า
+        </p>
+        <button class="button primary full-width" data-close="cart-dialog">
+          เลือกสินค้าต่อ
+        </button>
+      </div>
+    </template>
+    <!-- โต๊ะ 1 ตัว: จำนวนโต๊ะปรับใน data.js -->
+    <template id="table-template">
+      <button class="table">
+        <strong data-field="label"> </strong>
+        <span data-field="status"> </span>
+      </button>
+    </template>
+    <template id="reservation-template">
+      <div class="reservation">
+        <div>
+          <h3 data-field="title"></h3>
+          <p>
+            <span data-field="when"> </span>
+            <br />
+            รหัส
+            <span data-field="id"> </span>
+          </p>
+        </div>
+        <button class="text-button" data-action="cancel">ยกเลิก</button>
+      </div>
+    </template>
+    <!-- แบบฟอร์มยืนยันจอง -->
+    <template id="booking-confirm-template">
+      <div>
+        <div class="dialog-head">
+          <h2>ยืนยันการจองจำลอง</h2>
+          <button
+            aria-label="ปิด"
+            class="icon-button"
+            data-close="booking-dialog"
+          >
+            ×
+          </button>
+        </div>
+        <p>
+          <span data-field="table"> </span>
+          <br />
+          <span data-field="when"> </span>
+        </p>
+        <form class="booking-form" id="reservation-form">
+          <label class="field">
+            ชื่อที่ใช้จอง
+            <input
+              autocomplete="off"
+              maxlength="40"
+              name="name"
+              placeholder="ชื่อเล่นของคุณ"
+              required=""
+            />
+          </label>
+          <p class="notice">
+            ใช้ชื่อสมมติได้ การจองนี้เก็บเฉพาะเครื่องและยังไม่ส่งให้ร้าน
+          </p>
+          <button class="button primary" type="submit">
+            ยืนยันจองโต๊ะ (เดโม)
+          </button>
+        </form>
+      </div>
+    </template>
+    <template id="booking-success-template">
+      <div class="center">
+        <div class="success-mark">✓</div>
+        <h2>จองโต๊ะตัวอย่างแล้ว!</h2>
+        <p>
+          <span data-field="table"> </span>
+          <br />
+          <span data-field="when"> </span>
+        </p>
+        <strong data-field="id"> </strong>
+        <p class="notice">
+          <span data-field="saved"> </span>
+          <br />
+          ยังไม่ใช่การยืนยันจากร้าน
+        </p>
+        <button class="button primary full-width" data-close="booking-dialog">
+          เรียบร้อย
+        </button>
+      </div>
+    </template>
+    <template id="cancel-confirm-template">
+      <div>
+        <div class="dialog-head">
+          <h2>ยกเลิกการจองนี้?</h2>
+          <button
+            aria-label="ปิด"
+            class="icon-button"
+            data-close="booking-dialog"
+          >
+            ×
+          </button>
+        </div>
+        <p>
+          <span data-field="table"> </span>
+          <br />
+          <span data-field="when"> </span>
+        </p>
+        <button class="button primary full-width" id="confirm-cancel">
+          ยืนยันยกเลิกการจอง
+        </button>
+        <button
+          class="button secondary full-width cancel-keep"
+          data-close="booking-dialog"
+        >
+          เก็บการจองไว้
+        </button>
+      </div>
+    </template>
+    <!-- กิจกรรม 1 รายการ -->
+    <template id="event-template">
+      <div class="event-row">
+        <div>
+          <span data-field="day"> </span>
+          <strong data-field="game"> </strong>
+        </div>
+        <span data-field="time"> </span>
+      </div>
+    </template>
+    <script src="data.js"></script>
+    <script src="assets/chat-retrieval.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

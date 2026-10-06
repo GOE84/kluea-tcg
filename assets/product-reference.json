@@ -1,0 +1,525 @@
+{
+  "source": "chatbot-products.xlsx",
+  "description": "ข้อมูลสินค้าแชทบอทจาก Excel แยก ราคาและสต็อกเป็นเดโม",
+  "products": [
+    {
+      "id": "pokemon",
+      "game": "Pokémon",
+      "name": "Destined Rivals",
+      "price": 5900,
+      "stock": 6,
+      "desc": "Booster Box · ภาษาอังกฤษ · 36 ซอง",
+      "image": "pokemon.png",
+      "promotion": {
+        "label": "โปรเปิดเดโม ลด 5%",
+        "type": "percent",
+        "value": 5,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "pokemon",
+        "pokémon",
+        "โปเกมอน",
+        "โปเกม่อน"
+      ],
+      "details": "Pokémon TCG: Scarlet & Violet — Destined Rivals Booster Display Box บรรจุ 36 ซอง ภาพประกอบจาก Pokémon",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.pokemon.com/us/news/pokemon-tcg-scarlet-violet-destined-rivals-product-showcase",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece",
+      "game": "ONE PIECE",
+      "name": "Romance Dawn [OP01]",
+      "price": 190,
+      "stock": 8,
+      "desc": "Booster Pack · ภาษาอังกฤษ · 1 ซอง",
+      "image": "onepiece.jpg",
+      "promotion": {
+        "label": "ซื้อ 3 ซอง ลด 10%",
+        "type": "percent",
+        "value": 10,
+        "minimumQuantity": 3
+      },
+      "aliases": [
+        "one piece",
+        "onepiece",
+        "วันพีซ",
+        "วันพีส"
+      ],
+      "details": "ONE PIECE CARD GAME Booster Pack — Romance Dawn [OP01] ภาพประกอบจาก Bandai",
+      "badge": "BOOSTER PACK",
+      "source": "https://en.onepiece-cardgame.com/products/boosters/op01.php",
+      "dataType": "demo"
+    },
+    {
+      "id": "gundam",
+      "game": "GUNDAM",
+      "name": "Heroic Beginnings [ST01]",
+      "price": 690,
+      "stock": 12,
+      "desc": "Starter Deck · ภาษาญี่ปุ่น · 1 ชุด",
+      "image": "gundam.webp",
+      "promotion": {
+        "label": "รับเดโมฟรีค่าห่อ",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "gundam",
+        "กันดั้ม",
+        "กันดัม"
+      ],
+      "details": "GUNDAM CARD GAME Starter Deck Heroic Beginnings [ST01] ภาพประกอบจากเว็บไซต์ Gundam Card Game",
+      "badge": "STARTER DECK",
+      "source": "https://www.gundam-gcg.com/asia-en/products/st01.html",
+      "dataType": "demo"
+    },
+    {
+      "id": "lorcana",
+      "game": "LORCANA",
+      "name": "The First Chapter — Starter Set",
+      "price": 2290,
+      "stock": 4,
+      "desc": "Starter Decks · ภาษาอังกฤษ · เซ็ต 3 แบบ",
+      "image": "lorcana.png",
+      "promotion": {
+        "label": "โปรเซ็ต ลด ฿200",
+        "type": "fixed",
+        "value": 200,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "lorcana",
+        "ลอร์คานา"
+      ],
+      "details": "Disney Lorcana: The First Chapter Starter Decks เดโมจัดเป็นเซ็ต 3 แบบตามภาพ ตัวสินค้าและราคาใช้เพื่อสาธิตเท่านั้น",
+      "badge": "STARTER SET",
+      "source": "https://www.disneylorcana.com/en-US/product",
+      "dataType": "demo"
+    },
+    {
+      "id": "pokemon-pack-demo",
+      "game": "Pokémon",
+      "name": "Booster Pack Demo A",
+      "price": 179,
+      "stock": 24,
+      "desc": "Booster Pack ตัวอย่าง · 1 ซอง",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "โปเกมอนซองเดโม",
+        "pokemon pack demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "BOOSTER PACK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "pokemon-deck-demo",
+      "game": "Pokémon",
+      "name": "Starter Deck Demo B",
+      "price": 590,
+      "stock": 11,
+      "desc": "Starter Deck ตัวอย่าง · 1 ชุด",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "โปเกมอนเด็คเดโม",
+        "pokemon deck demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "STARTER DECK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-box-demo",
+      "game": "ONE PIECE",
+      "name": "Booster Box Demo A",
+      "price": 3990,
+      "stock": 5,
+      "desc": "Booster Box ตัวอย่าง · 1 กล่อง",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "วันพีซกล่องเดโม",
+        "one piece box demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "BOOSTER BOX",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-deck-demo",
+      "game": "ONE PIECE",
+      "name": "Starter Deck Demo B",
+      "price": 490,
+      "stock": 14,
+      "desc": "Starter Deck ตัวอย่าง · 1 ชุด",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "วันพีซเด็คเดโม",
+        "one piece deck demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "STARTER DECK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "gundam-pack-demo",
+      "game": "GUNDAM",
+      "name": "Booster Pack Demo A",
+      "price": 159,
+      "stock": 30,
+      "desc": "Booster Pack ตัวอย่าง · 1 ซอง",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "กันดั้มซองเดโม",
+        "gundam pack demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "BOOSTER PACK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "gundam-deck-demo",
+      "game": "GUNDAM",
+      "name": "Starter Deck Demo B",
+      "price": 720,
+      "stock": 9,
+      "desc": "Starter Deck ตัวอย่าง · 1 ชุด",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "กันดั้มเด็คเดโม",
+        "gundam deck demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "STARTER DECK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "lorcana-pack-demo",
+      "game": "LORCANA",
+      "name": "Booster Pack Demo A",
+      "price": 220,
+      "stock": 18,
+      "desc": "Booster Pack ตัวอย่าง · 1 ซอง",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "ลอร์คานาซองเดโม",
+        "lorcana pack demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "BOOSTER PACK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "lorcana-deck-demo",
+      "game": "LORCANA",
+      "name": "Starter Deck Demo B",
+      "price": 790,
+      "stock": 7,
+      "desc": "Starter Deck ตัวอย่าง · 1 ชุด",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "ลอร์คานาเด็คเดโม",
+        "lorcana deck demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "STARTER DECK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "yugioh-pack-demo",
+      "game": "Yu-Gi-Oh!",
+      "name": "Booster Pack Demo A",
+      "price": 129,
+      "stock": 26,
+      "desc": "Booster Pack ตัวอย่าง · 1 ซอง",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "ยูกิโอซองเดโม",
+        "yugioh pack demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "BOOSTER PACK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "yugioh-deck-demo",
+      "game": "Yu-Gi-Oh!",
+      "name": "Starter Deck Demo B",
+      "price": 450,
+      "stock": 13,
+      "desc": "Starter Deck ตัวอย่าง · 1 ชุด",
+      "image": "tcg-demo-product.svg",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "ยูกิโอเด็คเดโม",
+        "yugioh deck demo"
+      ],
+      "details": "สินค้าเดโมสำหรับทดสอบแชทบอท ไม่ใช่สินค้าและราคาจริง",
+      "badge": "STARTER DECK",
+      "source": "ข้อมูลจำลอง",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-op13-box",
+      "game": "ONE PIECE",
+      "name": "Booster Box [OP13]",
+      "price": 3490,
+      "stock": 3,
+      "desc": "Booster Box · รุ่นที่กล่าวถึงในคลิป · ข้อมูลเดโม",
+      "image": "op13-box.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "OP13",
+        "OP 13",
+        "วันพีซ OP13"
+      ],
+      "details": "ภาพกล่องรุ่นนี้จากผู้ผลิต ราคาและสต็อกเป็นข้อมูลจำลอง ไม่ใช่รายการสินค้าจริงของร้าน ภาพ: https://en.onepiece-cardgame.com/products/boosters/op13/",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=660s",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-op14-box",
+      "game": "ONE PIECE",
+      "name": "Booster Box [OP14]",
+      "price": 3590,
+      "stock": 4,
+      "desc": "Booster Box · รุ่นที่กล่าวถึงในคลิป · ข้อมูลเดโม",
+      "image": "op14-box.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "OP14",
+        "OP 14",
+        "วันพีซ OP14"
+      ],
+      "details": "ภาพกล่องรุ่นนี้จากผู้ผลิต ราคาและสต็อกเป็นข้อมูลจำลอง ไม่ใช่รายการสินค้าจริงของร้าน ภาพ: https://asia-tc.onepiece-cardgame.com/products/boosters/op14.php",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=660s",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-op15-box",
+      "game": "ONE PIECE",
+      "name": "Booster Box [OP15]",
+      "price": 3690,
+      "stock": 5,
+      "desc": "Booster Box · รุ่นที่กล่าวถึงในคลิป · ข้อมูลเดโม",
+      "image": "op15-box.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "OP15",
+        "OP 15",
+        "วันพีซ OP15"
+      ],
+      "details": "ภาพกล่องรุ่นนี้จากผู้ผลิต ราคาและสต็อกเป็นข้อมูลจำลอง ไม่ใช่รายการสินค้าจริงของร้าน ภาพ: https://asia-tc.onepiece-cardgame.com/products/boosters/op15.php",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=660s",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-op16-box",
+      "game": "ONE PIECE",
+      "name": "Booster Box [OP16]",
+      "price": 3790,
+      "stock": 6,
+      "desc": "Booster Box · รุ่นที่กล่าวถึงในคลิป · ข้อมูลเดโม",
+      "image": "op16-box.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "OP16",
+        "OP 16",
+        "วันพีซ OP16"
+      ],
+      "details": "ภาพกล่องรุ่นนี้จากผู้ผลิต ราคาและสต็อกเป็นข้อมูลจำลอง ไม่ใช่รายการสินค้าจริงของร้าน ภาพ: https://www.onepiece-cardgame.com/products/op16.html",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=660s",
+      "dataType": "demo"
+    },
+    {
+      "id": "onepiece-op17-box",
+      "game": "ONE PIECE",
+      "name": "Booster Box [OP17]",
+      "price": 3890,
+      "stock": 7,
+      "desc": "Booster Box · รุ่นที่กล่าวถึงในคลิป · ข้อมูลเดโม",
+      "image": "op17-box.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "OP17",
+        "OP 17",
+        "วันพีซ OP17"
+      ],
+      "details": "ภาพกล่องรุ่นนี้จากผู้ผลิต ราคาและสต็อกเป็นข้อมูลจำลอง ไม่ใช่รายการสินค้าจริงของร้าน ภาพ: https://asia-tc.onepiece-cardgame.com/products/op17.html",
+      "badge": "BOOSTER BOX",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=660s",
+      "dataType": "demo"
+    },
+    {
+      "id": "card-sleeves-demo",
+      "game": "ACCESSORY",
+      "name": "ซองใส่การ์ด",
+      "price": 120,
+      "stock": 20,
+      "desc": "อุปกรณ์ใส่การ์ด · ข้อมูลเดโม",
+      "image": "onepiece-sleeves.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "ซองใส่",
+        "sleeves",
+        "card sleeves"
+      ],
+      "details": "ภาพจากผู้ผลิตเป็นตัวอย่างรุ่น ร้านยังไม่ยืนยันว่ามีรุ่นในภาพ ราคาและสต็อกเป็นข้อมูลจำลอง ภาพ: https://www.onepiece-cardgame.com/products/sleeve042.html",
+      "badge": "ACCESSORY",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=894s",
+      "dataType": "demo"
+    },
+    {
+      "id": "card-binder-demo",
+      "game": "ACCESSORY",
+      "name": "แฟ้มเก็บการ์ด",
+      "price": 390,
+      "stock": 8,
+      "desc": "แฟ้มสะสมการ์ด · ข้อมูลเดโม",
+      "image": "onepiece-binder.webp",
+      "promotion": {
+        "label": "ไม่มีโปรโมชัน (เดโม)",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "แฟ้ม",
+        "binder",
+        "card binder"
+      ],
+      "details": "ภาพจากผู้ผลิตเป็นตัวอย่างรุ่น ร้านยังไม่ยืนยันว่ามีรุ่นในภาพ ราคาและสต็อกเป็นข้อมูลจำลอง ภาพ: https://www.onepiece-cardgame.com/products/baseshop-binder001.html",
+      "badge": "ACCESSORY",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=894s",
+      "dataType": "demo"
+    },
+    {
+      "id": "playable-singles-demo",
+      "game": "การ์ดแยก",
+      "name": "การ์ดใช้งานคัดเลือก",
+      "price": 10,
+      "stock": 50,
+      "desc": "การ์ดแยกสำหรับจัดเด็ค · เลือกใบที่ร้าน",
+      "image": "singles-demo.svg",
+      "promotion": {
+        "label": "ราคา 10 บาทต่อใบตามที่กล่าวในคลิป สต็อกเดโม",
+        "type": "note",
+        "value": 0,
+        "minimumQuantity": 1
+      },
+      "aliases": [
+        "การ์ดแยก",
+        "การ์ดใช้งาน",
+        "การ์ด 10 บาท"
+      ],
+      "details": "คลิปกล่าวถึงการ์ดใช้งานราคา 10 บาทต่อใบช่วง 15:23–15:55 รายการและสต็อกเป็นข้อมูลจำลอง ต้องเลือกใบที่ร้าน",
+      "badge": "SINGLE CARD",
+      "source": "https://www.youtube.com/watch?v=YM4ZSiVY1QE&t=923s",
+      "dataType": "demo"
+    }
+  ]
+}
